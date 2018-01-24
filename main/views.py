@@ -42,10 +42,10 @@ def search(request):
     if request.method == 'POST':
         searchParameter = request.POST['search']  # received
 
-        auth = OAuthHandler('4Zb7o0O8OO2X9D8ZwZbMim0VC',
-                            'AuhG7FRlmcnIsangasWB20bJk41cYFgHOQQ61tK8PkujlR7gKI')
-        auth.set_access_token('1100686363-6JxQIno5T8UMPQeWyaH783qrxxJJrmwbLJCEtoF',
-                              'GqgnME3MRfOQL79TzWuH5S9fJOgXXogdAwyVDzGSk4ovD')
+        auth = OAuthHandler('Consumer Key (API Key)',
+                            'Consumer Secret (API Secret)')
+        auth.set_access_token('Access Token',
+                              'Access Token Secret')
 
         l = StdOutListener()
         stream = Stream(auth, l)
