@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<html>
+
+    <head>
+        <title>Twitter Target Tweets</title>
+        <!-- set the base path for angular routing -->
+
+        {% include 'headCss.html' %} {% include 'headJs.html' %}
+
+    </head>
+
+    <body>
+        <form action="/search/" method="post" class="col s12">
+            {% csrf_token %}
+            <div class="row">
+                <div class="input-field col s3">
+                    <button class="btn waves-effect waves-light modal-action" type="button" name="Data">
+                        <a style="color:white" href="{% url 'results' %}" target="_blank">See Results</a>
+                    </button>
+                </div>
+                <div class="input-field col s6">
+                    {{ form }}
+                    <button class="btn waves-effect waves-light modal-action submit" type="submit" name="action">Start Streaming</button>
+                </div>
+                <div class="input-field col s3"></div>
+            </div>
+        </form>
+    </body>
+
+</html>
