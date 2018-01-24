@@ -4,7 +4,7 @@ Steps to get the project up and running:
 3. Run "virtualenv venv"
 4. Run "cd venv"
 5. install git if not installed
-6. Clone this repo ""
+6. Clone this repo "https://github.com/tarunlnmiit/twiitertargettweets.git"
 7. Activate the virtualenv "source bin/activate"
 8. Install all requriements "pip install -r twittertargettweets/requirements.txt"
 9. Run "cd twittertargettweets"
